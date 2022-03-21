@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 5</title>
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <style>
         h1 {margin-bottom: 30px;}
@@ -16,8 +16,46 @@
 </head>
 <body class="mt-2 ml-4">
     <h1>Employee Management System</h1>
-    <form id="empForm">
-     
+    <form id="empForm" style="border:1px solid red; background-color: lightgray;">
+        <div class="form-row">
+            <label for="validationCustom01">8-Digit Employee ID</label>
+            <input type="text" class="form-control" required>
+            <div class="invalid-feedback">
+                Please provide a valid ID.
+            </div>
+        </div>
+        <div class="form-row">
+            <label for="validationCustom02">Name</label>
+            <input type="text" class="form-control" required>
+            <div class="invalid-feedback">
+                Please provide a valid name.
+            </div>
+        </div>
+        <div class="form-row">
+            <label for="validationCustom03">4-Digit Extension</label>
+            <input type="text" class="form-control" required>
+            <div class="invalid-feedback">
+                Please provide a valid extension.
+            </div>
+        </div>
+        <div class="form-row">
+            <label for="validationCustom04">Email</label>
+            <input type="email" class="form-control" required>
+            <div class="invalid-feedback">
+                Please provide a valid email.
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="validationCustom05">Department</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>Administrative</option>
+              <option>Engineering</option>
+              <option>Executive</option>
+              <option>Marketing</option>
+              <option>Sales</option>
+            </select>
+          </div>
+        <button class="btn btn-primary" type="submit" id="submit">Add Employee</button>
     </form>
 </body>
 </html>
