@@ -1,11 +1,11 @@
 window.onload = function() {
-    let empForm =  document.getElementById('empForm')
-    let digit8 = document.getElementById('digit8')
-    let username = document.getElementById('username')
-    let digit4 = document.getElementById('digit4')
-    let emailID = document.getElementById('emailID')
-    let deptSelection = document.getElementById('deptSelection')
-
+    var $ = (id) => document.getElementById(id)
+    let empForm = $('empForm')
+    let digit8 = $('digit8')
+    let username = $('username')
+    let digit4 = $('digit4')
+    let emailID = $('emailID')
+    let deptSelection = $('deptSelection')
     empForm.addEventListener('submit', (e) => {
         digit8 = parseInt(digit8.value)
         username = String(username.value)
